@@ -22,7 +22,6 @@ const CartSidebar = ({
       animation: "slideIn 0.25s ease",
     }}>
 
-      {/* Header */}
       <div style={{
         display: "flex",
         alignItems: "center",
@@ -54,11 +53,10 @@ const CartSidebar = ({
           }}
           aria-label="Close cart"
         >
-          ✕
+          X
         </button>
       </div>
 
-      {/* Empty state */}
       {cartItems.length === 0 ? (
         <div style={{
           flex: 1,
@@ -69,7 +67,7 @@ const CartSidebar = ({
           gap: "12px",
           color: "var(--text-secondary)",
         }}>
-          <span style={{ fontSize: "40px" }}>🛒</span>
+          <span style={{ fontSize: "28px", fontWeight: 600 }}>Cart</span>
           <p style={{ fontSize: "15px", fontWeight: 500, color: "var(--text-primary)" }}>
             Your cart is empty
           </p>
@@ -93,7 +91,6 @@ const CartSidebar = ({
         </div>
       ) : (
         <>
-          {/* Items list */}
           <div style={{ flex: 1, overflowY: "auto", padding: "16px 24px" }}>
             {cartItems.map((item) => (
               <div key={item.id} style={{
@@ -129,7 +126,6 @@ const CartSidebar = ({
                     justifyContent: "space-between",
                     marginTop: "6px",
                   }}>
-                    {/* Quantity controls */}
                     <div style={{
                       display: "flex",
                       alignItems: "center",
@@ -153,7 +149,7 @@ const CartSidebar = ({
                         }}
                         aria-label="Decrease quantity"
                       >
-                        −
+                        -
                       </button>
                       <span style={{
                         fontSize: "13px",
@@ -205,7 +201,6 @@ const CartSidebar = ({
             ))}
           </div>
 
-          {/* Footer */}
           <div style={{
             padding: "20px 24px",
             borderTop: "0.5px solid var(--border)",
@@ -231,7 +226,7 @@ const CartSidebar = ({
               border: "none",
               cursor: "pointer",
             }}>
-              Checkout — ${cartTotal.toFixed(2)}
+              Checkout - ${cartTotal.toFixed(2)}
             </button>
             <button
               onClick={onClear}

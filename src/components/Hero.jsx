@@ -5,7 +5,7 @@ const Hero = ({ storeName }) => {
       background: "var(--bg-card)",
       borderBottom: "0.5px solid var(--border)",
     }}>
-      <div style={{ maxWidth: "560px" }}>
+      <div style={{ maxWidth: "620px" }}>
         <span style={{
           display: "inline-block",
           fontSize: "11px",
@@ -29,7 +29,7 @@ const Hero = ({ storeName }) => {
           color: "var(--text-primary)",
           marginBottom: "12px",
         }}>
-          Minimal goods,<br />maximum quality.
+          African artisan goods,<br />delivered with modern convenience.
         </h1>
 
         <p style={{
@@ -38,8 +38,8 @@ const Hero = ({ storeName }) => {
           lineHeight: 1.7,
           marginBottom: "24px",
         }}>
-          Welcome to {storeName || "our store"}. A curated collection of everyday
-          essentials — designed to last, built to impress.
+          Welcome to {storeName || "Zuri Market"}. Discover handcrafted jewellery,
+          fashion, skincare, and homeware from African makers - curated for everyday living.
         </p>
 
         <div style={{ display: "flex", gap: "12px" }}>

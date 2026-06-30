@@ -24,6 +24,10 @@ const ProductCard = ({ product, onAddToCart }) => {
             objectFit: "cover",
             transition: "transform 0.3s ease",
           }}
+          onError={(e) => {
+            e.currentTarget.onerror = null;
+            e.currentTarget.src = "https://placehold.co/500x500/f1f0ec/1a1a1a?text=Zuri+Market";
+          }}
           onMouseEnter={(e) => e.currentTarget.style.transform = "scale(1.04)"}
           onMouseLeave={(e) => e.currentTarget.style.transform = "scale(1)"}
         />

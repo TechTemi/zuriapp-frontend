@@ -48,7 +48,7 @@ const ProductGrid = ({ products, loading, error, onAddToCart }) => {
         padding: "80px 32px",
         gap: "12px",
       }}>
-        <span style={{ fontSize: "32px" }}>⚠️</span>
+        <span style={{ fontSize: "28px", fontWeight: 600 }}>Warning</span>
         <p style={{ fontSize: "15px", fontWeight: 500, color: "var(--text-primary)" }}>
           Could not load products
         </p>
@@ -67,7 +67,7 @@ const ProductGrid = ({ products, loading, error, onAddToCart }) => {
         padding: "80px 32px",
         gap: "12px",
       }}>
-        <span style={{ fontSize: "32px" }}>🛍️</span>
+        <span style={{ fontSize: "28px", fontWeight: 600 }}>Cart</span>
         <p style={{ fontSize: "15px", fontWeight: 500, color: "var(--text-primary)" }}>
           No products found
         </p>
